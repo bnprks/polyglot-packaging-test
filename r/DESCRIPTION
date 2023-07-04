@@ -1,0 +1,20 @@
+Package: polyglot.packaging
+Title: Test of polyglot packaging
+Version: 0.1.0
+Authors@R: 
+    person(given = "Benjamin",
+           family = "Parks",
+           role = c("aut", "cre"),
+           email = "bparks@stanford.edu",
+           comment = c(ORCID = "0000-0002-0261-7472"))
+Description: > Skeleton package for creating a shared C++ library alongside
+  an installable R library and a pip-installable Python library in a single repo.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Roxygen: list(markdown = TRUE)
+LinkingTo: 
+    Rcpp
+Depends: 
+    R (>= 2.10)
