@@ -27,3 +27,8 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/bnprks/polyglot-packaging-test"
 "Bug Tracker" = "https://github.com/bnprks/polyglot-packaging-test/issues"
+
+[project.optional-dependencies]
+test = [
+    'pytest',
+]
