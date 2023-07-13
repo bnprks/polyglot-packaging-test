@@ -27,7 +27,7 @@ ext_modules = [
         ),
         # Example: passing in the version to the compiled code
         define_macros = [('VERSION_INFO', __version__)],
-        cxx_standard=17,
+        extra_compile_args = ['-std=c++17']
         ),
 ]
 
