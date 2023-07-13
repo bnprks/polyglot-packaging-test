@@ -12,7 +12,11 @@ __version__ = importlib.metadata.version(__package__)
 #   Sort input source files if you glob sources to ensure bit-for-bit
 #   reproducible builds (https://github.com/pybind/python_example/pull/53)
 
-
+import os
+print("IN INSTALLATION SCRIPT")
+print("pwd: ", os.getcwd())
+print("ls ..:", os.listdir(os.path.dirname(os.getcwd())))
+print("END OF INSTALLATION SCRIPT")
 # raise Exception("GLOB GLOB GLOB GLOB GLOB:" + str(glob.glob("src/cpp-core/*.cpp")))
 
 ext_modules = [
