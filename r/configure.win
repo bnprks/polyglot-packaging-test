@@ -1,5 +1,0 @@
-
-echo "IN INSTALLATION SCRIPT (Windows edition)"
-echo "pwd: " $(pwd)
-echo "ls ..:" $(ls ..)
-echo "END OF INSTALLATION SCRIPT"
