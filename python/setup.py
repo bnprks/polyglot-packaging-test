@@ -3,10 +3,8 @@ import glob
 # Available at setup time due to pyproject.toml
 from pybind11.setup_helpers import Pybind11Extension, build_ext
 from setuptools import setup
-import importlib.metadata
 
-
-__version__ = importlib.metadata.version(__package__)
+__version__ = "0.0.1"
 
 # Note:
 #   Sort input source files if you glob sources to ensure bit-for-bit
@@ -34,6 +32,7 @@ ext_modules = [
 setup(
     ext_modules=ext_modules,
     extras_require={"test": "pytest"},
+    version = __version__
     # Currently, build_ext only provides an optional "highest supported C++
     # level" feature, but in the future it may provide more features.
 )

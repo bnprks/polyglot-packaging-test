@@ -1,6 +1,6 @@
 [build-system]
 requires = [
-    "setuptools>=42",
+    "setuptools>=61",
     "pybind11>=2.10.0",
 ]
 build-backend = "setuptools.build_meta"
@@ -8,7 +8,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "polyglot-packaging"
-version = "0.0.1"
+# See https://packaging.python.org/en/latest/guides/single-sourcing-package-version/
+dynamic = ["version"]
+
 dependencies = [
 ]
 

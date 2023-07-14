@@ -1,3 +1,4 @@
+from .version import __version__
 import polyglotpackaging.cpp
 
 def py_add(a, b):
