@@ -1,4 +1,5 @@
 import glob
+import os.path
 
 # Available at setup time due to pyproject.toml
 from pybind11.setup_helpers import Pybind11Extension, build_ext
@@ -15,7 +16,14 @@ print("IN INSTALLATION SCRIPT")
 print("pwd: ", os.getcwd())
 print("ls ..:", os.listdir(os.path.dirname(os.getcwd())))
 print("END OF INSTALLATION SCRIPT")
-# raise Exception("GLOB GLOB GLOB GLOB GLOB:" + str(glob.glob("src/cpp-core/*.cpp")))
+
+# Handle improperly checked-out symlinks from git.
+# This happens for certain Windows users depending on git config
+if not os.path.isdir("src/cpp-core"):
+    import shutil
+    os.remove("src/cpp-core")
+    shutil.copytree("../r/src/cpp-core", "src/cpp-core")
+
 
 ext_modules = [
     Pybind11Extension("polyglotpackaging.cpp",

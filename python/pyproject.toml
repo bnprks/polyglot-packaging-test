@@ -8,7 +8,6 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "polyglot-packaging"
-# See https://packaging.python.org/en/latest/guides/single-sourcing-package-version/
 dynamic = ["version"]
 
 dependencies = [

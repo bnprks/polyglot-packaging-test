@@ -1,5 +1,5 @@
 import sys
-
+# See https://packaging.python.org/en/latest/guides/single-sourcing-package-version/
 if sys.version_info >= (3, 8):
     from importlib import metadata
 else:
