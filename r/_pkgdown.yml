@@ -1,0 +1,6 @@
+url: https://bnprks.github.io/polyglot-packaging-test/r
+template:
+  bootstrap: 5
+  bootswatch: simplex
+  navbar:
+    bg: light
