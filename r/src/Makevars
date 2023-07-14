@@ -1,7 +1,5 @@
 
 PKG_CXXFLAGS = -std=c++17 -Wno-ignored-attributes -Wno-unknown-pragmas -Wall -Wextra -Wpedantic -Wno-cast-function-type
-PKG_LIBS = -lz
-
 
 OBJECTS=\
 bindings.o \

@@ -1,4 +1,5 @@
 #' @useDynLib polyglot.packaging, .registration = TRUE
+#' @importFrom Rcpp evalCpp
 NULL
 
 #' @export
