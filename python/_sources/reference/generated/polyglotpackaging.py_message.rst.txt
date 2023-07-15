@@ -1,0 +1,6 @@
+﻿polyglotpackaging.py\_message
+=============================
+
+.. currentmodule:: polyglotpackaging
+
+.. autofunction:: py_message

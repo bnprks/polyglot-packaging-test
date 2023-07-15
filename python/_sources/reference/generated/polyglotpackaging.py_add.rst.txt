@@ -1,0 +1,6 @@
+﻿polyglotpackaging.py\_add
+=========================
+
+.. currentmodule:: polyglotpackaging
+
+.. autofunction:: py_add
