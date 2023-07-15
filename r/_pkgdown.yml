@@ -4,3 +4,11 @@ template:
   bootswatch: simplex
   navbar:
     bg: light
+
+repo:
+  url:
+    home: https://github.com/bnprks/polyglot-packaging-test/
+    source: https://github.com/bnprks/polyglot-packaging-test/blob/HEAD/r/
+    issue: https://github.com/bnprks/polyglot-packaging-test/issues/
+    user: https://github.com/
+
