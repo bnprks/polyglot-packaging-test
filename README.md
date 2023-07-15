@@ -17,14 +17,25 @@ can be directly installed from the github source in both R and Python.
 ### R
 Uses `pkgdown` with a standard setup.
 
-**Build + Deploy**:
+**Build**:
 
-- For testing, just do `pkgdown::build_site()`. Keeps an untracked copy in `r/docs`
-- For deployment, do `pkgdown::deploy_to_branch(subdir="r/docs")`
-
+- `pkgdown::build_site()` from within the `r` directory
 
 ### Python
 Uses Sphinx with MyST to allow for markdown-format docs.
 
-**Editing extensions**
-VS Code autoDocstring
+**Build**:
+
+- `make html` from within the `python/docs` directory
+
+**Editing extensions**:
+- VS Code autoDocstring
+
+
+### Github Pages
+Github pages html files are present in the `gh-pages` branch. For local development and updating
+of the docs, run `git worktree add docs gh-pages` from the project root. 
+This makes any files written to the `docs` folder show up in the root of the `gh-pages` branch.
+
+Within the main branch, the html documentation outputs are symlinked to this `docs` folder,
+so everything will go into the correct part of the `gh-pages` branch assuming the worktree is setup.
