@@ -8,6 +8,23 @@ can be directly installed from the github source in both R and Python.
 `pip install "git+https://github.com/bnprks/polyglot-packaging-test#subdirectory=python"`
 
 ## R installation
-`remotes::install_github("bnprks/BPCells/r")`
+`remotes::install_github("bnprks/polyglot-packaging-test/r")`
 
 
+
+## Documentation
+
+### R
+Uses `pkgdown` with a standard setup.
+
+**Build + Deploy**:
+
+- For testing, just do `pkgdown::build_site()`. Keeps an untracked copy in `r/docs`
+- For deployment, do `pkgdown::deploy_to_branch(subdir="r/docs")`
+
+
+### Python
+Uses Sphinx with MyST to allow for markdown-format docs.
+
+**Editing extensions**
+VS Code autoDocstring
