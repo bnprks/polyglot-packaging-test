@@ -24,7 +24,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinx.ext.napoleon",
-    "sphinx.ext.linkcode"
+    "sphinx.ext.linkcode",
 ]
 
 templates_path = ['_templates']

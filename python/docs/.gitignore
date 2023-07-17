@@ -1,5 +1,2 @@
 source/reference/generated
-
-!build
-build/*
-!build/html
+build/
