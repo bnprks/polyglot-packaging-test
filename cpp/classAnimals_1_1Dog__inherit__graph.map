@@ -1,0 +1,5 @@
+<map id="Animals::Dog" name="Animals::Dog">
+<area shape="rect" id="node1" title="A Dog class." alt="" coords="15,80,125,107"/>
+<area shape="rect" id="node3" href="$classAnimals_1_1Corgi.html" title="A Corgi class." alt="" coords="11,155,129,181"/>
+<area shape="rect" id="node2" href="$classAnimals_1_1Animal.html" title="An animal base class." alt="" coords="5,5,135,32"/>
+</map>
