@@ -1,0 +1,10 @@
+# This configure just copies the whole package out of the r/ subdirectory to allow direct installation
+
+cp -r r/R \
+ r/src \
+ r/man \
+ r/tests \
+ r/.Rbuildignore \
+ r/DESCRIPTION \
+ r/NAMESPACE \
+ .

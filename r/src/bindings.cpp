@@ -5,7 +5,7 @@
 #include "cpp-core/message.hpp"
 
 using namespace Rcpp;
-
+using namespace Polyglot;
 
 // [[Rcpp::export]]
 CharacterVector message_cpp() {
