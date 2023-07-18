@@ -2,6 +2,7 @@
 
 #include <string>
 
-std::string message() {
-    return "Hello from C++!";
-}
+namespace Polyglot {
+std::string message() { return "Hello from C++!"; }
+
+} // namespace Polyglot
