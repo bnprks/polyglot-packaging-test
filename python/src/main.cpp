@@ -22,11 +22,11 @@ PYBIND11_MODULE(cpp, m) {
            message
     )pbdoc";
 
-    m.def("add", &add, R"pbdoc(
+    m.def("add", &Polyglot::add, R"pbdoc(
         Add two numbers
     )pbdoc");
 
-    m.def("message", &message, R"pbdoc(
+    m.def("message", &Polyglot::message, R"pbdoc(
         Give a message
     )pbdoc");
 
