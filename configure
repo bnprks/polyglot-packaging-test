@@ -1,5 +1,5 @@
 # This configure just copies the whole package out of the r/ subdirectory to allow direct installation
-
+echo "Running configure script"
 cp -r r/R \
  r/src \
  r/man \
