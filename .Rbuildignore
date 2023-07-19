@@ -1,9 +1,5 @@
-^.pytest_cache$
-^.vscode$
 ^cpp$
 ^docs$
 ^python$
 ^venv$
-^r/_pkgdown\.yml$
-^r/docs$
-^r/pkgdown$
+^r$
