@@ -3,7 +3,7 @@ echo "Running configure script"
 
 # Note that on MacOS, the non-case-sensitive file system will cause
 # r/.Rbuildignore, r/DESCRIPTION, and r/NAMESPACE to be deleted before
-# configure is run
+# configure is run. Hence we add "|| true" to avoid crashing the install
 cp -r r/R \
  r/src \
  r/man \

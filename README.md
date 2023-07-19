@@ -12,33 +12,31 @@ can be directly installed from the github source in both R and Python.
 
 
 
-## Documentation
-The documentation site is built separately for each language, then combined into
-a single static file tree in the top-level `docs` folder (not a tracked folder) .
+## Development guide
 
-For convenience with Github pages, the `gh-pages` branch
-is mounted as the `docs` top-level folder using `git worktree add docs gh-pages`, then 
-the documentation sites are combined into the top-level `docs` folder. This allows easy
-deployment while keeping generated HTML files off of the main branch.
+Helper scripts included for building docs and running tests. Within `r`, `python`, or `cpp`
+run `bash scripts/run_tests.sh` or `bash scripts/build_docs.sh`. Run from the root directory
+to run tests/docs for all languages in one command.
 
 ## R
 
- - Uses `pkgdown` with a standard setup
- - symlinks the docs directory into the output path
- - **Build**: `pkgdown::build_site()` from within the `r` directory
+**Dev requirements**: `install.packages(c("pkgdown", "devtools", "testthat"))`
+ - Documentation uses `pkgdown`
+ - Tests use `testthat`
 
 ## Python
 
- - Uses Sphinx with the PyData theme
+**Dev requirements**: [tox](https://tox.wiki/en/stable/installation.html)
+ - Documentation uses `Sphinx` with [PyData theme](https://pydata-sphinx-theme.readthedocs.io/en/latest/)
+ - Tests use `pytest`
  - Includes a helper file with the overal project home page, linking to C++, R, and Python docs.
- - Files are automatically copied into place during the build process
- - **Build**: `make html` from within the `python/docs` directory
+ - `tox` handles virtualenv setup for tests + documentation
 
 ## C++
 
- - Uses Doxygen with the doxygene awesome css theme
- - Files are automatically copied into place during the build process
- - **Build**: `doxygen` from within the `cpp/docs` directory
+**Dev requirements**: cmake, doxygen
+ - Documentation uses Doxygen with the [Doxygen Awesome theme](https://jothepro.github.io/doxygen-awesome-css/index.html)
+ - Tests use googletest + cmake + ctest
 
 ### VS Code editing extensions
 

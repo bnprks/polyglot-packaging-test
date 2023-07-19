@@ -4,3 +4,5 @@ Testing/
 
 *.o
 *.so
+
+cpp/docs/html
