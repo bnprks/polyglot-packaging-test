@@ -1,5 +1,9 @@
 # This configure just copies the whole package out of the r/ subdirectory to allow direct installation
 echo "Running configure script"
+
+# Note that on MacOS, the non-case-sensitive file system will cause
+# r/.Rbuildignore, r/DESCRIPTION, and r/NAMESPACE to be deleted before
+# configure is run
 cp -r r/R \
  r/src \
  r/man \
@@ -7,4 +11,5 @@ cp -r r/R \
  r/.Rbuildignore \
  r/DESCRIPTION \
  r/NAMESPACE \
- .
+ . \
+ || true
