@@ -1,8 +1,10 @@
-# This is just a dummy 
-
-echo "\n\n========================================================================="
-echo "ERROR: Incorrect installation command"
-echo "To install polyglot-packaging-test, please run:"
-echo "    remotes::install_github(\"bnprks/polyglot-packaging-test/r\")"
-echo "=========================================================================\n"
-exit 1
+# This configure just copies the whole package out of the r/ subdirectory to allow direct installation
+echo "Running configure script"
+cp -r r/R \
+ r/src \
+ r/man \
+ r/tests \
+ r/.Rbuildignore \
+ r/DESCRIPTION \
+ r/NAMESPACE \
+ .

@@ -53,6 +53,6 @@ class Dog : public Animal {
 class Corgi : public Dog {
   public:
     std::string breed() const override { return "Corgi"; }
-};
+}
 
 } // namespace Animals
